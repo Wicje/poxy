@@ -1,6 +1,6 @@
 # Marketplace User Journeys
 
-Scope: seller accounts, products, customers, orders, and order items only. Payments, delivery tracking, messaging, and other future features are out of scope.
+Scope: seller accounts, products, customers, orders, and order items only. Payments, delivery tracking, messaging, and other future features are out of scope. Each numbered journey starts with a user action and ends with the expected result.
 
 Access labels used in every numbered step:
 
