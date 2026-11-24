@@ -1,6 +1,6 @@
 # Sprint 1 Review Pack
 
-This page connects the four planning documents so a reviewer can confirm the design before any routes or tables are built. All planning files live in `docs/` with descriptive names.
+This page connects the four planning documents so a reviewer can confirm the design before any routes or tables are built. All planning files live in `docs/` with descriptive names, and each linked document contains a `Review pack cross-check` section that links back here.
 
 ## Planning documents
 
@@ -8,6 +8,8 @@ This page connects the four planning documents so a reviewer can confirm the des
 - [Core business rules](./business-rules.md) - 15 must/must-not rules with valid and invalid examples.
 - [Data relationships (ERD)](./data-model.md) - Mermaid ERD with five tables, primary keys, foreign keys, and one-to-many links.
 - [API route plan](./api-plan.md) - seven routes with permissions, request data, success responses, and error responses.
+
+Each link above resolves to a tracked file in `docs/`. Its cross-check section states which part of this page's scope, exclusions, and checklist that document supports.
 
 ## Core scope in plain language
 
@@ -53,7 +55,7 @@ This page connects the four planning documents so a reviewer can confirm the des
 Run from the repository root:
 
 ```sh
-for f in docs/workflows.md docs/business-rules.md docs/data-model.md docs/api-plan.md; do test -f "$f" || exit 1; done && grep -cE '^- \[ \]' docs/sprint-1-review.md
+for f in docs/workflows.md docs/business-rules.md docs/data-model.md docs/api-plan.md; do test -f "$f" && grep -q 'Review pack cross-check' "$f" || exit 1; done && grep -cE '^- \[ \]' docs/sprint-1-review.md
 ```
 
 Expected output: `8`. Then open each linked document to confirm the summary, out-of-scope list, and checklist items above match the detailed plan.

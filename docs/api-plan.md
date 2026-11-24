@@ -38,3 +38,7 @@ grep -cE '^\| (GET|POST|PATCH) ' docs/api-plan.md
 ```
 
 Expected count: 7 routes. Then read the table to confirm each row has a method, path, purpose, permitted user, request data, success status, and likely error status, that `GET /products` documents `availability` values and a `400` for an invalid value, and that `POST /customers` is listed separately from `POST /orders`.
+
+## Review pack cross-check
+
+This document is part of the Sprint 1 review pack: [sprint-1-review.md](./sprint-1-review.md). It defines signed-in seller product writes, the active-only public catalogue with its `availability` filter, standalone customer creation, and order submission with server-derived totals and all-or-nothing failure responses.

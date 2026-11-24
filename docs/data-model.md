@@ -80,3 +80,7 @@ grep -cE '^[[:space:]]+[A-Z_]+ \|\|--' docs/data-model.md
 ```
 
 Expected counts: 9 primary/foreign key markers and 4 one-to-many relationships. Then read the entity blocks to confirm all five tables are present with understandable field names.
+
+## Review pack cross-check
+
+This document is part of the Sprint 1 review pack: [sprint-1-review.md](./sprint-1-review.md). It stores the five in-scope tables with clear PK/FK links, uses `is_active` for product availability, and keeps `unit_price` as a server-copied snapshot so historical order totals stay correct.

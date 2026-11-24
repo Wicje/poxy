@@ -110,3 +110,7 @@ grep -cE '^- (Valid|Invalid):' docs/business-rules.md
 ```
 
 Expected counts: 15 rules and 30 example lines. Then read each block to confirm it has a `must`/`must not` rule, a `Records:` line, and both a valid and an invalid example.
+
+## Review pack cross-check
+
+This document is part of the Sprint 1 review pack: [sprint-1-review.md](./sprint-1-review.md). It defines ownership (BR-01, BR-02, BR-09), product availability (BR-07), positive quantity (BR-11), server-calculated totals (BR-05, BR-12), and all-or-nothing order saving (BR-15) used by the review checklist.
