@@ -77,3 +77,7 @@ grep -nE 'Expected result:|Records involved:|\[Signed-in seller\]|\[Public\]|\[C
 ```
 
 Confirm the output includes all six numbered journeys (three seller, three customer), each with a `Records involved:` line, at least one access label per step, and an `Expected result:` line as its final step. Then read the failure cases list to confirm it matches the journeys above.
+
+## Review pack cross-check
+
+This document is part of the Sprint 1 review pack: [sprint-1-review.md](./sprint-1-review.md). It supplies the seller create/change/deactivate and customer browse/view/order journeys, and states that product writes require a signed-in seller while catalogue reading is public.
